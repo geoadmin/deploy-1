@@ -1,0 +1,55 @@
+# /etc/deploy/deploy.cfg: system-wide deploy config file
+#
+# You can use the magical %(here)s variable in this config file; it will be
+# replaced by the config file parent directory.
+# 
+
+[main]
+hookdir = /etc/deploy/hooks/
+packages_dir = /var/cache/deploy/
+# use the 'include' directive if you need to include other configuration.
+#include = %(here)s/other.cfg
+
+[remote_hosts]
+prod = example.com, example.org
+
+[databases]
+# if you don't want to activate this feature, uncomment the following line:
+#active = false
+
+# names is a comma separated list of database and/or table du dump and restore.
+# format is 'database', 'database.table' or 'database.schema.table'
+#names = foo, bar.baz
+names = %(project)s
+psql = psql
+drop = dropdb
+dump = pg_dump -Fc
+restore = pg_restore --no-owner -Fc -C -d template1
+restore_tmp = pg_restore --no-owner -Fc -d
+restore_table = pg_restore -Fc --single-transaction
+createdb = createdb
+
+[files]
+# if you don't want to activate this feature, uncomment the following line:
+#active = false
+# set the ignore pattern if you dont want to copy some files or directories:
+#ignore = *.bak
+dirs = /var/sig/shp/%(project)s/
+
+[code]
+# if you don't want to activate this feature, uncomment the following line:
+#active = false
+# set the ignore pattern if you dont want to copy some files or directories:
+#ignore = *.pyc, .svn
+# the source and destination directory
+dir = /var/www/%(project)s/private/%(project)s/
+# the code source directory
+#src = /path/to/source/dir/
+# the code destination directory
+#dest = /path/to/source/dir/
+
+[apache]
+# if you don't want to activate this feature, uncomment the following line:
+#active = false
+dest = /var/www/%(project)s/conf/%(project)s.conf
+content = Include /var/www/%(project)s/private/%(project)s/%(project)s/apache/*.conf

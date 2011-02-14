@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/chtopo_supportcw/!svn/ver/595/trunk/deploy/debian
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/chtopo_supportcw/!svn/ver/556/trunk/deploy/debian/control
+END
+deploy-chtopo-cw3.files
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/chtopo_supportcw/!svn/ver/513/trunk/deploy/debian/deploy-chtopo-cw3.files
+END
+compat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/chtopo_supportcw/!svn/ver/202/trunk/deploy/debian/compat
+END
+changelog
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/chtopo_supportcw/!svn/ver/593/trunk/deploy/debian/changelog
+END
+deploy-chtopo-cw3.conffiles
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/chtopo_supportcw/!svn/ver/513/trunk/deploy/debian/deploy-chtopo-cw3.conffiles
+END
+docs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/chtopo_supportcw/!svn/ver/202/trunk/deploy/debian/docs
+END
+deploy-chtopo-database.files
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/chtopo_supportcw/!svn/ver/556/trunk/deploy/debian/deploy-chtopo-database.files
+END
+rules
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/chtopo_supportcw/!svn/ver/595/trunk/deploy/debian/rules
+END
+deploy-chtopo-wms.files
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/chtopo_supportcw/!svn/ver/513/trunk/deploy/debian/deploy-chtopo-wms.files
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/chtopo_supportcw/!svn/ver/202/trunk/deploy/debian/README
+END
+deploy.files
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/chtopo_supportcw/!svn/ver/513/trunk/deploy/debian/deploy.files
+END
+deploy-chtopo-database.conffiles
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/chtopo_supportcw/!svn/ver/556/trunk/deploy/debian/deploy-chtopo-database.conffiles
+END
+deploy-chtopo-wms.conffiles
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/chtopo_supportcw/!svn/ver/513/trunk/deploy/debian/deploy-chtopo-wms.conffiles
+END
+deploy.conffiles
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/chtopo_supportcw/!svn/ver/513/trunk/deploy/debian/deploy.conffiles
+END
+copyright
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/chtopo_supportcw/!svn/ver/510/trunk/deploy/debian/copyright
+END
