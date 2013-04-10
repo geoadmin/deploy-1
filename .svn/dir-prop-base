@@ -1,9 +1,0 @@
-K 10
-svn:ignore
-V 36
-deploy.egg-info
-build
-dist
-MANIFEST
-
-END

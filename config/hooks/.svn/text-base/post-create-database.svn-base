@@ -1,5 +1,0 @@
-#!/bin/sh
-
-DATABASE_DIR=$1
-
-exit 0
