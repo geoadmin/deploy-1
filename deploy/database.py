@@ -178,8 +178,8 @@ def restore(config, srcdir):
             dumpfile = os.path.join(srcdir, database + '.dump')
             tmpdatabase = database + '_deploy_tmp'
             drop_database(tmpdatabase, dropcmd=drop, psqlcmd=psql)
-            run_job(createdb + ("%(dbname)s" % {'dbname': tmpdatabase}).split())
-            run_job(restore_tmp + ("%(dbname)s %(dump)s" % {'dbname': tmpdatabase, 'dump': dumpfile}).split())
+            run_job(createdb + [tmpdatabase])
+            run_job(restore_tmp + ['-d', tmpdatabase, dumpfile])
 
             if database_exists(database, psqlcmd=psql):
                 swapjobs.append("DROP DATABASE %(newname)s;" % {'newname': database})
