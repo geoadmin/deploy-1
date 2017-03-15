@@ -11,7 +11,7 @@ class JSONFormatter(logging.Formatter):
 
     def format(self, record):
         data = {'message': record.msg,
-                'time_generated': datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%S.%fZ'),
+                'timegenerated': datetime.datetime.utcnow().isoformat(),
                 'type': 'deploy'}
 
         if self.host_name:
